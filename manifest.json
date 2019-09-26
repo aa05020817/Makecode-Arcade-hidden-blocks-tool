@@ -1,0 +1,29 @@
+{
+   "manifest_version": 2,
+   "icons": {
+      "16": "images/icon_128.png",
+      "48": "images/icon_128.png",
+      "128": "images/icon_128.png"
+   },
+   "name": "Makecode Arcade教材 遮蔽方塊工具",
+   "version": "1.0.0",
+   "description": "hide the cubes",
+   "browser_action": {
+      "default_icon": "images/icon_64.png",
+      "default_popup": "popup.html",
+      "default_title": "tools"
+   },
+   "permissions": [
+      "activeTab"
+   ],
+   "content_scripts": [
+      {
+         "matches": [
+            "https://arcade.makecode.com/#editor"
+         ],
+         "js": [
+            "execute.js"
+         ]
+      }
+   ]
+}
