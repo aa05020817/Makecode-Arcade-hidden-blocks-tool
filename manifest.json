@@ -19,7 +19,7 @@
    "content_scripts": [
       {
          "matches": [
-            "https://arcade.makecode.com/#editor"
+            "https://arcade.makecode.com/*"
          ],
          "js": [
             "execute.js"
