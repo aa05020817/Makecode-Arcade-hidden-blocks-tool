@@ -13,13 +13,22 @@
 	<div id="menu">
 		<div id="tools" class="item">
 			<img src="" width="16" height="16" />
-			<a href="https://arcade.makecode.com/#editor" target="_blank">Go To Makecode Arcade</a>
+			<a href="https://arcade.makecode.com/" target="_blank">Go To Makecode Arcade</a>
 		</div>
 	</div>
 	<hr />
 	<button id="hidden">隱藏</button>
 	<button id="reset">顯示</button>
-	<script src="./popup.js"></script>
+	<hr />
+	<select onchange="location.href=this.options[this.selectedIndex].value">
+		<optgroup selected="true" label="個別隱藏方塊">
+			<!-- <option value=""></option> -->
+			<button id="hidden_cha">隱藏角色</button>
+	        <button id="reset_cha">顯示角色</button>
+	        <script src="./popup.js"></script>
+		</optgroup>
+	</select>
+	
 </body>
 
 </html>
